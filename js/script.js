@@ -47,7 +47,15 @@ function draw() {
   background(0, 0, 0);
 
 //location: x and y,
-  rect(10,5,20,18);
+//top line
+  rect(10,5,40,40);
+  rect(50,5,40,40);
+  rect(90,5,40,40);
+  rect(130,5,40,40);
+  rect(170,5,40,40);
+  rect(210,5,40,40);
+  rect(250,5,40,40);
+
 //rect(x  y  w  h);
 
 }
