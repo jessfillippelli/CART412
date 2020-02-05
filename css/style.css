@@ -11,3 +11,16 @@ body {
   margin: 0;
   background:black;
 }
+
+.cell{
+
+  position:absolute;
+}
+
+.hover{
+  background:green;
+}
+
+.off{
+  background:white;
+}
