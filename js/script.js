@@ -82,16 +82,16 @@ if(event.keyCode ===87){
 }// end of 87
 
 if(event.keyCode ===69){
-   counter_e = counter_e+1;
+  // counter_e = counter_e+1;
   for(let i =0; i<grid.length;i++){
 
 // if counter is odd make it black else make it green
-   if(counter_q%12 ===1 ){
+   if(i%12===0){
     grid[i].cellColor = "green";
   }
- //  else if(counter_q%12 ===1 && i%12===0){
- //   grid[i].cellColor = "green";
- // }
+  else {
+   grid[i].cellColor = "black";
+ }
 
     grid[i].boxElement.style.background = grid[i].cellColor;
   }
@@ -99,15 +99,17 @@ if(event.keyCode ===69){
 } //end of 69
 
 if(event.keyCode ===82){
-  counter_r = counter_r+1;
+  //counter_r = counter_r+1;
   for(let i =0; i<grid.length;i++){
 
 
-   if(counter_q%1 ===12 && i%12===1){
-    grid[i].cellColor = "green";
+   if(i%12===0){
+    grid[i].cellColor = "black";
   }
-  else if(counter_q%2 ===1 && i%2===0){
-   grid[i].cellColor = "black";
+  else {
+    let colorChoice = i%colorArray.length;
+    grid[i].cellColor = colorArray[colorChoice];
+
  }
 
     grid[i].boxElement.style.background = grid[i].cellColor;
