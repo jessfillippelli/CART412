@@ -1,3 +1,9 @@
+
+document.addEventListener('keydown', changeThem);
+
+
+let colorArray = ["#D1D869", "#8ACFB9", "#B2D456", "#6CC28A", "#98BF62", "#71B744",
+"#35B44C", "#15AB4B", "#728C6A", "#597D38", "#088A44", "#354A23"];
 class Cell{
   constructor(x,y,width,height,id) {
     this.height = height;
@@ -26,6 +32,23 @@ class Cell{
     event.target.classList.remove("off");
     event.target.classList.add("hover");
   }
+
+function changeThem(){
+  console.log(event.keyCode);
+  if(event.keyCode ===81 ){
+
+//one black square and one green till the end
+
+
+    //fill(10,150,71);
+  }
+if(event.keyCode ===87){
+//the array of colors fuction
+}
+
+} //end of changeThem
+
+
 
   // mouseOutFunction(event){
   //   console.log(event.target);
