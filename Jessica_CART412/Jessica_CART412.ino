@@ -60,9 +60,6 @@ void loop() {
     if (buttonValOne == HIGH) {
       // if the current state is HIGH then the button went from off to on:
       buttonPushCounterOne++;
-      //Serial.println("on");
-      //Serial.print("number of button pushes: ");
-      //Serial.println(buttonPushCounterOne);
 
       //make a random num
       int randomNum = random(ARRAY_TEST_NUM);
@@ -90,10 +87,7 @@ void loop() {
     if (buttonValTwo == HIGH) {
       // if the current state is HIGH then the button went from off to on:
       buttonPushCounterTwo++;
-      //Serial.println("on");
-      //Serial.print("number of button pushes: ");
-      //Serial.println(buttonPushCounterTwo);
-
+ 
       //make a random num
       int randomNumTwo = random(ARRAY_TEST_NUM_TWO);
       speakNumP2(randomNumTwo);
