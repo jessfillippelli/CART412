@@ -26,13 +26,6 @@ void setup()
 }
 
 void loop() {
-//  voice.say(spPAUSE2);
-//    voice.say(sp2_DANGER);
-//    voice.say(sp2_DANGER);
-//    voice.say(sp3_STORM);
-//    voice.say(sp3_IN);
-//    voice.say(sp3_THE);
-//    voice.say(sp3_NORTH);
   int proximity = digitalRead(REED_PIN);
   //Serial.println(proximity);
  // delay(100);
@@ -100,6 +93,9 @@ void sayCounter(){
         }
           if(counter ==8){
             voice.say(sp2_EIGHT);
+        }
+          if(counter ==9){
+            voice.say(sp2_NINE);
         }
 
 }
