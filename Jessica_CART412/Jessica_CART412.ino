@@ -1,14 +1,9 @@
-/*https://dronebotworkshop.com/rotary-encoders-arduino/ */
+// what helps the sound from the speaker
 #include "Talkie.h"
 #include "Vocab_US_Large.h"
 #include "Vocab_Special.h"
 
-//arrray of number to speak from the talkie libary
-//this one is for when the encoder moves CW
-//String message[5] = {"ten", "nine", "four", "one", "ninetieth-one"};
 
-//this one is for when the encoder moves CCW
-//String messageTwo[5] = {"six", "ninetieth-four", "two", "three", "one"};
 
 //define two button vars
 #define BUTTON_PIN_1 7
@@ -54,8 +49,6 @@ void setup() {
 
 
 void loop() {
-
-
 
 /* FOR BUTTON ONE */
   int buttonValOne = digitalRead(BUTTON_PIN_1); // read value from button
